@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-- [Demo](https://xyphoria.netlify.app)
+- [Demo](https://xyphora.netlify.app)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
