@@ -1,4 +1,4 @@
-Space Explorer 🚀
+<h1>Space Explorer 🚀</h1> <br>
 Space Explorer is an interactive web-based game where players take on the role of an astronaut on a mission to explore the mysterious Planet Xyphora, collect ancient artifacts, and battle hostile aliens.
 
 Table of Contents
