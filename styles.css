@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root {
+	--primary-color: #fff;
+	--secondary-color: #e07e5b;
+	--border-color: #e90000;
+	--background-opacity: 0.85;
+	--button-bg-color: #6e3a3a;
+	--button-hover-color: #5b5353;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('https://media1.tenor.com/m/9wEpMZgbqHcAAAAd/starseed.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Orbitron', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	min-height: 100vh;
+}
+
+#game-container {
+	border: 8px solid var(--border-color);
+	width: 450px;
+	height: 450px;
+	margin-top: 50px;
+	border-radius: 15px;
+	background-color: rgba(157, 179, 199, var(--background-opacity));
+	overflow: hidden;
+	background-image: url('https://imageio.forbes.com/specials-images/imageserve//6296a459f150d611efd94145/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hidden {
+	display: none;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: 800;
+	color: var(--primary-color);
+	text-shadow: 5px 5px 5px rgba(37, 36, 36, 0.8);
+	margin-top: 10px;
+}
+
+.underline {
+	border-bottom: 8px solid var(--primary-color);
+	box-shadow: 5px 5px 5px rgba(37, 36, 36, 0.8);
+}
+
+#info-panel {
+	background: linear-gradient(
+		120deg,
+		var(--secondary-color),
+		#b87333,
+		#f0c27b,
+		#d58686,
+		#ab7967
+	);
+	padding: 10px;
+}
+
+#info-panel p {
+	font-size: 1.25rem;
+}
+
+.stat-label {
+	font-weight: 800;
+}
+
+#player-stats {
+	display: flex;
+	gap: 25px;
+	margin-top: 10px;
+}
+
+#alien-stats {
+	border-top: 1px solid black;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+#game-play {
+	display: flex;
+	flex-direction: column;
+}
+
+#button-container {
+	padding: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 15px auto;
+}
+
+.btn {
+	padding: 12px 18px;
+	border: 2px solid transparent;
+	background-color: var(--button-bg-color);
+	font-size: 1.125rem;
+	color: var(--primary-color);
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+	background-color: var(--button-hover-color);
+	transform: scale(1.05);
+}
+
+.btn:focus {
+	outline: none;
+	border-color: var(--button-hover-color);
+	box-shadow: 0 0 8px rgba(91, 83, 83, 0.6);
+}
+
+#round-heading {
+	text-align: center;
+	font-size: 1.5625rem;
+	font-weight: 800;
+	color: var(--primary-color);
+}
+
+#scene-description {
+	padding: 15px;
+	background-color: rgba(255, 255, 255, 0.3);
+	flex-grow: 1;
+}
+
+#scene-title {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#scene-text {
+	font-size: 1.125rem;
+	font-family: sans-serif;
+	font-weight: 600;
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 20px 20px 40px 20px;
+}

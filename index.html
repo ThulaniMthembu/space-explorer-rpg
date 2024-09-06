@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Space Explorer</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1><span class="underline">SPACE EXPLORER</span></h1>
+		</header>
+		<main id="game-container">
+			<section id="info-panel">
+				<h2>Player: Astronaut</h2>
+				<div id="player-stats">
+					<p>
+						<span class="stat-label">Health:</span>
+						<span id="health-value">100</span>
+					</p>
+					<p>
+						<span class="stat-label">Artifacts:</span>
+						<span id="artifacts-count">0</span> of 3
+					</p>
+				</div>
+				<div id="alien-stats" class="hidden">
+					<p>
+						<span class="stat-label">Alien Health:</span>
+						<span id="alien-health-value">20</span>
+					</p>
+				</div>
+			</section>
+			<section id="game-play">
+				<div id="button-container">
+					<button class="btn" id="start-btn">Start</button>
+					<button class="btn hidden" id="action-btn"></button>
+				</div>
+				<h3 id="round-heading">Round <span id="round-count">1</span></h3>
+				<div id="scene-description">
+					<h4 id="scene-title">
+						The Astronaut has touched down on Planet Xyphora
+					</h4>
+					<p id="scene-text">
+						Prepare for an epic journey across this mysterious planet. Press
+						"Start" to begin your hunt for ancient artifacts on Xyphora.
+					</p>
+				</div>
+			</section>
+		</main>
+		<script src="script.js"></script>
+	</body>
+</html>
