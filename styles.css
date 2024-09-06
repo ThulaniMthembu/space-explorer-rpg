@@ -29,7 +29,8 @@ body {
 
 #game-container {
 	border: 8px solid var(--border-color);
-	width: 450px;
+	width: 100%;
+	max-width: 450px;
 	height: 450px;
 	margin-top: 50px;
 	border-radius: 15px;
@@ -50,6 +51,7 @@ h1 {
 	color: var(--primary-color);
 	text-shadow: 5px 5px 5px rgba(37, 36, 36, 0.8);
 	margin-top: 10px;
+	text-align: center;
 }
 
 .underline {
@@ -147,4 +149,47 @@ h1 {
 	font-weight: 600;
 	background-color: rgba(255, 255, 255, 0.4);
 	padding: 20px 20px 40px 20px;
+}
+
+@media (max-width: 768px) {
+	body {
+		padding: 5px;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	#game-container {
+		margin-top: 20px;
+		height: auto;
+		min-height: 450px;
+	}
+
+	#info-panel p {
+		font-size: 1rem;
+	}
+
+	#player-stats {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.btn {
+		padding: 10px 15px;
+		font-size: 1rem;
+	}
+
+	#round-heading {
+		font-size: 1.25rem;
+	}
+
+	#scene-title {
+		font-size: 1.1rem;
+	}
+
+	#scene-text {
+		font-size: 1rem;
+		padding: 15px 15px 30px 15px;
+	}
 }
