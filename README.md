@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-- [Demo](#demo)
+- [Demo](https://xyphoria.netlify.app)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
@@ -26,7 +26,7 @@
 - **CSS**: For styling the UI and game elements.
 - **JavaScript**: Game logic and interactivity.
 - **Orbitron Font**: A cool, futuristic font used for the game text.
-- **External API/Assets**: [Tenor](https://tenor.com) and [Forbes](https://forbes.com) for the background images (add specific API or image credit if required).
+- **External API/Assets**: [Giphy](https://giphy.com), [Tenor](https://tenor.com) and [Forbes](https://forbes.com) for the background images.
 
 ## Setup
 
