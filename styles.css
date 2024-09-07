@@ -19,6 +19,7 @@ body {
 	background-image: url('https://media1.tenor.com/m/9wEpMZgbqHcAAAAd/starseed.gif');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	font-family: 'Orbitron', sans-serif;
 	display: flex;
 	flex-direction: column;
@@ -31,18 +32,20 @@ body {
 	border: 8px solid var(--border-color);
 	width: 100%;
 	max-width: 450px;
-	height: 450px;
-	margin-top: 50px;
+	height: 500px;
+	margin-top: 20px;
 	border-radius: 15px;
 	background-color: rgba(157, 179, 199, var(--background-opacity));
 	overflow: hidden;
 	background-image: url('https://imageio.forbes.com/specials-images/imageserve//6296a459f150d611efd94145/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds');
 	background-repeat: no-repeat;
 	background-size: cover;
+	display: flex;
+	flex-direction: column;
 }
 
 .hidden {
-	display: none;
+	display: none !important;
 }
 
 h1 {
@@ -94,14 +97,22 @@ h1 {
 #game-play {
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
 }
 
 #button-container {
 	padding: 10px;
 	display: flex;
 	flex-direction: column;
-	margin: 15px auto 0px auto;
+	align-items: center;
 	gap: 10px;
+}
+
+#action-btn-container {
+	display: flex;
+	gap: 10px;
+	width: 100%;
+	justify-content: center;
 }
 
 .btn {
@@ -113,7 +124,8 @@ h1 {
 	cursor: pointer;
 	border-radius: 5px;
 	transition: background-color 0.3s ease, transform 0.2s ease;
-	margin: 0 3px;
+	width: 80%;
+	max-width: 200px;
 }
 
 .btn:hover {
@@ -133,17 +145,23 @@ h1 {
 	font-weight: 800;
 	color: var(--primary-color);
 	margin-bottom: 5px;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #scene-description {
 	padding: 15px;
 	background-color: rgba(255, 255, 255, 0.3);
 	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
 }
 
 #scene-title {
 	text-align: center;
 	margin-bottom: 10px;
+	color: var(--primary-color);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #scene-text {
@@ -151,7 +169,18 @@ h1 {
 	font-family: sans-serif;
 	font-weight: 600;
 	background-color: rgba(255, 255, 255, 0.4);
-	padding: 20px 20px 40px 20px;
+	padding: 20px;
+	flex-grow: 1;
+	overflow-y: auto;
+}
+
+footer {
+	margin-top: 10px;
+	color: var(--primary-color);
+	font-size: 1.5rem;
+	text-align: center;
+	font-weight: 800;
+	text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -164,9 +193,9 @@ h1 {
 	}
 
 	#game-container {
-		margin-top: 20px;
-		height: auto;
-		min-height: 450px;
+		margin-top: 10px;
+		height: calc(100vh - 80px);
+		max-height: 550px;
 	}
 
 	#info-panel p {
@@ -174,13 +203,15 @@ h1 {
 	}
 
 	#player-stats {
-		flex-direction: column;
-		gap: 10px;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 5px;
 	}
 
 	.btn {
 		padding: 10px 15px;
 		font-size: 1rem;
+		width: 100%;
 	}
 
 	#round-heading {
@@ -193,6 +224,6 @@ h1 {
 
 	#scene-text {
 		font-size: 1rem;
-		padding: 15px 15px 30px 15px;
+		padding: 15px;
 	}
 }
