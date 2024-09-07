@@ -53,13 +53,14 @@ h1 {
 	font-weight: 800;
 	color: var(--primary-color);
 	text-shadow: 5px 5px 5px rgba(37, 36, 36, 0.8);
-	margin-top: 10px;
+	margin: 10px auto;
 	text-align: center;
 }
 
 .underline {
 	border-bottom: 8px solid var(--primary-color);
 	box-shadow: 5px 5px 5px rgba(37, 36, 36, 0.8);
+	margin-bottom: 0.625rem;
 }
 
 #info-panel {
